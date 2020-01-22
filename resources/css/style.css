@@ -8,6 +8,7 @@ body {
     /* color: seashell;
     background-color: black; */
     font-size: 22px;
+    background-color: rgb(230, 211, 211);
   }
 
 .flex-container {
@@ -54,7 +55,7 @@ h4, h5, p {
 }
 
 a {
-  color: gray;
+  color: black;
   text-decoration: none; 
 }
 /* Header Section */
@@ -65,7 +66,7 @@ header {
     position: fixed;
     z-index: 1; /* keeps header visible over other content*/
     height: 64px;
-    background-color: #F6AC8C;
+    background-color:  rgb(228, 179, 158);
     border-bottom: #533633;
     align-items: center;
 }
@@ -99,7 +100,7 @@ nav span {
 }
 
 .logo-back {
-  color: gray;
+  color: #75825A;
 }
 /* Banner Section */
 
@@ -312,13 +313,17 @@ nav span {
 
 footer {
   display: flex;
-  padding-left: 24px;
-  padding-top: 16px;
+  padding: 16px 0 24px 24px;
+  background-color: rgb(228, 179, 158);
 }
 
 footer p {
   width: 100%;
   margin: 0;
+}
+
+footer p, footer a {
+ font-size: 1.1;
 }
 
 .Footer-items {
