@@ -1,13 +1,12 @@
 /* Universal Styles */
 body {
-    width: 1200px;
     height: auto;
     margin: 0; /* Trying to set top of page to fit YES! */
     font-family: "Ubuntu", sans-serif;
     font-weight: normal;
     /* color: seashell;
     background-color: black; */
-    font-size: 22px;
+    font-size: 1rem;
     background-color: rgb(230, 211, 211);
   }
 
@@ -18,7 +17,7 @@ body {
 .left-container{
     width: 60%;
     display: flex;
-    padding: 32px 24px;
+    padding: 1.45rem 1.09rem;
     flex-direction: column;
 }
 
@@ -26,16 +25,13 @@ body {
     width: 40%;
     display: flex;
     flex-direction: column;
-    padding-top: 32px;
+    padding-top: 1.45rem;
   }
 
 h1 {
-  font-size: 1.8em;
+  font-size: 2.5rem;
   font-weight: bold;
-}
-
-h1 {
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
   padding-top: 0;
   margin: 0;
 }
@@ -50,7 +46,7 @@ h5 {
 }
 
 h4, h5, p {
-  font-size: 0.7em;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -61,11 +57,11 @@ a {
 /* Header Section */
 
 header {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;  /* corrects margin issues when width set to 100% */
     position: fixed;
     z-index: 1; /* keeps header visible over other content*/
-    height: 64px;
+    height: 4rem;
     background-color:  rgb(228, 179, 158);
     border-bottom: #533633;
     align-items: center;
@@ -73,13 +69,13 @@ header {
 
 .logo {
   display: inline-flex;
-  padding-left: 24px;
-  height: 64px;
+  padding-left: 1.5rem;
+  height: 4rem;
   align-items: center;  
 }
 
 .logo img {
-  height: 40px;
+  height: 2.5rem;
 }
 
 nav {
@@ -87,25 +83,53 @@ nav {
   display: inline-flex;
   justify-content: flex-end;
   text-align: right;
-  padding-right: 24px
+  padding-right: 1.5rem;
 }
 
 nav span {
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 .logo-front, .logo-back {
   margin: 0;
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 .logo-back {
   color: #75825A;
 }
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .non-mobile, .logo-front, .logo-back {
+   display: none;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .mobile {
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .mobile li {
+    padding: 0;
+  }
+}
+
 /* Banner Section */
 
 #Banner {
-  padding-top: 64px;
+  padding-top: 4rem;
   background-color: #E89845;
 }
 
@@ -117,7 +141,7 @@ nav span {
 
 #Banner .left-container{
   justify-content: center;  /*vertical adjustment of content with column flex */
-  padding: 32px 24px;
+  padding: 2rem 1.5rem;
 }
 
 #Banner .right-container{
@@ -127,8 +151,8 @@ nav span {
 .startbutton {
   background-color: #533633;
   width: 85%;
-  margin-top: 24px;
-  padding: 8px 0 8px 0;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0 0.5rem 0.5rem;
 }
 
 #Banner h1, #Banner h3 {
@@ -150,7 +174,7 @@ nav span {
 
 .main-feature {
   display: flex;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .main-feature img {
@@ -167,20 +191,20 @@ nav span {
 
 #Main .right-container{
   justify-content: flex-start;  /*vertical adjustment of content with column flex */
-  padding-left: 16px;
-  padding-top: 16px;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
 #Main .left-container h1 {
-  padding-top: 32px;
-  padding-bottom: 16px;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
 }
 
 .main-feature .main-feature-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 16px;
+  padding-left: 1rem;
   width: 65%;
 }
 
@@ -189,11 +213,11 @@ nav span {
 }
 
 #Main p {
-  margin: 8px 0 8px 0;
+  margin: 0.5rem 0 0.5rem 0;
 }
 
 #Main h4 {
-  padding-top: 16px;
+  padding-top: 1rem;
 }
 
 #Main .guest {
@@ -207,19 +231,19 @@ nav span {
 
 #Curiculum h1 {
   text-align: center;
-  padding: 32px 0 16px 0;
+  padding: 2rem 0 1rem 0;
 }
 
 #Curiculum .flex-container {
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 56px 0 56px;
-  padding-bottom: 16px;
+  margin: 0 3.5rem 0 3.5rem;
+  padding-bottom: 1rem;
 }
 
 .courses {
-  width: 320px;
-  margin: 16px;
+  width: 20rem;
+  margin: 1rem;
   background-color: #75825A;
 }
 
@@ -231,7 +255,7 @@ nav span {
 
 .courses-text {
   display: block;
-  padding: 16px 16px 24px 16px;
+  padding: 1rem 1rem 1.5rem 1rem;
 }
 
 #Curiculum h3 {
@@ -240,7 +264,7 @@ nav span {
 
 #Curiculum p {
   margin: 0;
-  padding-top: 8px;
+  padding-top: 0.5rem;
   font-size: 0.8em;
 }
 
@@ -248,11 +272,11 @@ nav span {
 
 #Thesis h1 {
   text-align: center;
-  padding: 32px 0 16px;
+  padding: 2rem 0 1rem;
 }
 
 #Thesis .flex-container {
-  padding: 16px 0 32px 24px;
+  padding: 1rem 0 2rem 1.5rem;
 }
 
 #Thesis img {
@@ -269,11 +293,11 @@ nav span {
 }
 
 .Thesis-left h3 {
-  padding-top: 24px;
+  padding-top: 1.5rem;
 }
 
 .Thesis-left p {
-  padding-top: 8px;
+  padding-top: 0.5rem;
   margin: 0;
 }
 
@@ -287,12 +311,12 @@ nav span {
 .Thesis-item {
   width: auto;
   display: inline-flex;
-  padding: 16px;
+  padding: 1rem;
 }
 
 .Thesis-item-text {
   width: 65%;
-  padding-left: 16px;
+  padding-left: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -307,13 +331,13 @@ nav span {
 }
 
 .Thesis-item-text p {
-  margin: 16px 0 8px 0;
+  margin: 1rem 0 0.5rem 0;
 }
 /* Footer Section */
 
 footer {
   display: flex;
-  padding: 16px 0 24px 24px;
+  padding: 1rem 0 1.5rem 1.5rem;
   background-color: rgb(228, 179, 158);
 }
 
@@ -332,12 +356,9 @@ footer p, footer a {
   justify-content: flex-end;
   align-content: center;
   text-align: right;
-  padding-right: 24px
+  padding-right: 1.5rem
 }
 
 footer span {
-  padding-left: 16px;
+  padding-left: 1rem;
 }
-
-/* Mobile Section */
-
