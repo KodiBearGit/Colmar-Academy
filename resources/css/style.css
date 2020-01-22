@@ -1,0 +1,337 @@
+/* Universal Styles */
+body {
+    width: 1200px;
+    height: auto;
+    margin: 0; /* Trying to set top of page to fit YES! */
+    font-family: "Helvetica", sans-serif;
+    /* color: seashell;
+    background-color: black; */
+    font-size: 22px;
+  }
+
+.flex-container {
+    display: flex;
+  }
+
+.left-container{
+    width: 60%;
+    display: flex;
+    padding: 32px 24px;
+    flex-direction: column;
+}
+
+.right-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 32px;
+  }
+
+h1 {
+  font-size: 1.8em;
+}
+
+h1 {
+  padding-bottom: 24px;
+  padding-top: 0;
+  margin: 0;
+}
+
+h4 {
+  padding: 0;
+  margin: 0;
+}
+
+h5 {
+  color: blue;
+}
+
+h4, h5, p {
+  font-size: 0.7em;
+}
+
+a {
+  color: gray;
+  text-decoration: none; 
+}
+/* Header Section */
+
+header {
+    width: 1200px;
+    margin: 0 auto;  /* corrects margin issues when width set to 100% */
+    position: fixed;
+    z-index: 1; /* keeps header visible over other content*/
+    height: 64px;
+    background-color: rgb(236, 255, 254);
+    border-bottom: 1px solid rgb(240, 197, 234);
+    align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+  padding-left: 24px;
+  height: 64px;
+  align-items: center;  
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  text-align: right;
+  padding-right: 24px
+}
+
+nav span {
+  padding-left: 16px;
+}
+
+.logo-front, .logo-back {
+  margin: 0;
+  font-size: 32px;
+}
+
+.logo-back {
+  color: gray;
+}
+/* Banner Section */
+
+#Banner {
+  padding-top: 64px;
+  background-color: lightgrey;
+}
+
+.studying {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#Banner .left-container{
+  justify-content: center;  /*vertical adjustment of content with column flex */
+  padding: 32px 24px;
+}
+
+#Banner .right-container{
+  justify-content: center;  /*vertical adjustment of content with column flex */
+}
+
+.startbutton {
+  background-color: rgb(82, 78, 78);
+  width: 85%;
+  margin-top: 24px;
+  padding: 8px 0 8px 0;
+}
+
+#Banner h1, #Banner h3 {
+  width: 85%;
+}
+
+#Banner .startbutton h3 {
+  margin: 0;
+  color: gray;
+  text-align: center;
+  width: 100%;
+}
+
+/* Main Section */
+
+#Main {
+  background-color: white;
+}
+
+.main-feature {
+  display: flex;
+  padding: 16px;
+}
+
+.main-feature img {
+  max-width: 35%;
+  height: auto;
+  display: block;
+}
+
+.reading {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+#Main .right-container{
+  justify-content: flex-start;  /*vertical adjustment of content with column flex */
+  padding-left: 16px;
+  padding-top: 16px;
+}
+
+#Main .left-container h1 {
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.main-feature .main-feature-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+  width: 65%;
+}
+
+#Main h3, #Main h5 {
+  margin: 0;
+}
+
+#Main p {
+  margin: 8px 0 8px 0;
+}
+
+#Main h4 {
+  padding-top: 16px;
+}
+
+#Main .guest {
+  background-color: rgb(224, 212, 158);
+}
+
+/* Curiculum Section */
+#Curiculum {
+  background-color: lightgrey;
+}
+
+#Curiculum h1 {
+  text-align: center;
+  padding: 32px 0 16px 0;
+}
+
+#Curiculum .flex-container {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 56px 0 56px;
+  padding-bottom: 16px;
+}
+
+.courses {
+  width: 320px;
+  margin: 16px;
+  background-color: cadetblue;
+}
+
+.courses img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.courses-text {
+  display: block;
+  padding: 16px 16px 24px 16px;
+}
+
+#Curiculum h3 {
+  margin: 0;
+}
+
+#Curiculum p {
+  margin: 0;
+  padding-top: 8px;
+  font-size: 0.8em;
+}
+
+/* Thesis Section */
+
+#Thesis h1 {
+  text-align: center;
+  padding: 32px 0 16px;
+}
+
+#Thesis .flex-container {
+  padding: 16px 0 32px 24px;
+}
+
+#Thesis img {
+  max-width: 35%;
+  height: auto;
+  display: block;
+}
+
+.Thesis-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 60%;
+}
+
+.Thesis-left h3 {
+  padding-top: 24px;
+}
+
+.Thesis-left p {
+  padding-top: 8px;
+  margin: 0;
+}
+
+.Thesis-right {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-content: left;
+}
+
+.Thesis-item {
+  width: auto;
+  display: inline-flex;
+  padding: 16px;
+}
+
+.Thesis-item-text {
+  width: 65%;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Upper {
+  background-color: coral;
+}
+
+#Thesis h3 {
+  margin: 0;
+}
+
+.Thesis-item-text p {
+  margin: 16px 0 8px 0;
+}
+/* Footer Section */
+
+footer {
+  display: flex;
+  border-top-width: thin;
+  border-top-color: crimson;
+  padding-left: 24px;
+  padding-top: 16px;
+}
+
+footer p {
+  width: 100%;
+  margin: 0;
+}
+
+.Footer-items {
+  width: 100%;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-content: center;
+  text-align: right;
+  padding-right: 24px
+}
+
+footer span {
+  padding-left: 16px;
+}
+
+/* Mobile Section */
+
