@@ -228,6 +228,10 @@ nav span {
   display: block;
 }
 
+#Main .mobile {
+  display: none;
+}
+
 .reading {
   max-width: 100%;
   height: auto;
@@ -271,12 +275,41 @@ nav span {
 
 @media only screen and (max-width: 470px) {
 
-  #Main .left-container {
+  #Main .left-container, #Main .non-mobile {
     display: none;
   }
 
   #Main .right-container {
     width: 100%;
+    padding: 0 0 2rem 0;
+  }
+
+  #Main .mobile {
+    display: block;
+  }
+
+  .main-feature {
+    flex-direction: column;
+  }
+
+  .main-feature img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  #Main .main-feature-text {
+    width: 100%;
+    padding: 0 1rem 0 0;
+  }
+
+  #Main h3 {
+    font-size: 2rem;
+  }
+
+  #Main p {
+    font-size: 1.5rem;
   }
 }
 
@@ -324,6 +357,33 @@ nav span {
   font-size: 0.8em;
 }
 
+@media only screen and (max-width: 470px) {
+ #Curiculum img,  #Curiculum p {
+   display: none;
+ }
+
+ #Curiculum .flex-container {
+  margin: 0;
+}
+
+ #Curiculum .courses {
+   width: 100%;
+   margin: 0 1rem 0.5rem 1rem;
+ }
+
+ #Curiculum .courses-text {
+   display: flex;
+ }
+
+ #Curiculum h1 {
+  font-size: 3rem;
+ }
+
+ #Curiculum h3 {
+  font-size: 2rem;
+ }
+}
+
 /* Thesis Section */
 
 #Thesis h1 {
@@ -344,8 +404,14 @@ nav span {
 .Thesis-left {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-content: flex-start;
   width: 60%;
+  padding-right: 1.5rem;
+}
+
+.Thesis-left video {
+  width: 100%;
+  height: auto;
 }
 
 .Thesis-left h3 {
@@ -389,6 +455,26 @@ nav span {
 .Thesis-item-text p {
   margin: 1rem 0 0.5rem 0;
 }
+
+@media only screen and (max-width: 470px) {
+  #Thesis .Thesis-right, #Thesis h3, #Thesis p {
+    display: none;
+  }
+
+  #Thesis .flex-container{
+    padding: 0;
+  }
+
+  #Thesis .flex-container .Thesis-left {
+   width: 100%;
+   padding: 0 0 1.5rem 0;
+  }
+
+  #Thesis video {
+    width: 100%;
+  }
+ }
+
 /* Footer Section */
 
 footer {
@@ -403,7 +489,7 @@ footer p {
 }
 
 footer p, footer a {
- font-size: 1.1;
+ font-size: 1.1rem;
 }
 
 .Footer-items {
@@ -418,3 +504,13 @@ footer p, footer a {
 footer span {
   padding-left: 1rem;
 }
+
+@media only screen and (max-width: 470px) {
+  .Footer-items {
+    display: none;
+  }
+
+  footer {
+    padding: 1rem;
+  }
+ }
