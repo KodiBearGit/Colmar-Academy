@@ -29,7 +29,7 @@ body {
   }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: bold;
   padding-bottom: 1.5rem;
   padding-top: 0;
@@ -78,6 +78,11 @@ header {
   height: 2.5rem;
 }
 
+header ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 nav {
   width: 100%;
   display: inline-flex;
@@ -104,7 +109,7 @@ nav span {
 }
 
 @media only screen and (max-width: 470px) {
-  .non-mobile, .logo-front, .logo-back {
+  nav, .logo-front, .logo-back {
    display: none;
   }
 
@@ -112,16 +117,15 @@ nav span {
     width: 100%;
   }
 
-  .mobile {
-    display: inline-flex;
-    list-style-type: none;
-    justify-content: space-evenly;
+  header ul {
+    display: flex;
     width: 100%;
+    justify-content: space-around;
     margin: 0;
-    padding-left: 0;
   }
 
-  .mobile li {
+  .mobile {
+    display: block;
     padding: 0;
   }
 }
@@ -164,6 +168,47 @@ nav span {
   color: gray;
   text-align: center;
   width: 100%;
+}
+
+@media only screen and (max-width: 470px) {
+  #Banner .flex-container {
+    display: block;
+  }
+
+  #Banner .left-container, #Banner .right-container {
+    width: 100%;
+    padding: 0 0 2rem 0;
+    flex-direction: column;
+  }
+
+  #Banner h1, #Banner .right-container h3 {
+    width: 100%;
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #Banner h3 {
+    font-size: 1.75rem;
+    padding-top: 0;
+    margin: 0;
+  }
+
+  #Banner h1 {
+    font-size: 3rem;
+    padding-bottom: 2rem;
+  }
+
+  #Banner .startbutton { 
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+  }
+
+  #Banner .startbutton h3 {
+    text-align: center;
+    margin: 0;
+  }
 }
 
 /* Main Section */
@@ -222,6 +267,17 @@ nav span {
 
 #Main .guest {
   background-color: #75825A;
+}
+
+@media only screen and (max-width: 470px) {
+
+  #Main .left-container {
+    display: none;
+  }
+
+  #Main .right-container {
+    width: 100%;
+  }
 }
 
 /* Curiculum Section */
